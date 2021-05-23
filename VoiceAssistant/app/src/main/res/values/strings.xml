@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Аврора</string>
+    <string name="startSpeech">Нажмите на микрофон и скажите что-то…</string>
+    <string name="micro">TODO</string>
+</resources>

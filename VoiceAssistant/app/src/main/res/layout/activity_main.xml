@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/VoiceButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_mic_24"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/micro" />
+
+    <TextView
+        android:id="@+id/speechText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:textColor="#1D66AF"/>
+
+    <TextView
+        android:id="@+id/TextTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startSpeech"
+        android:textSize="18sp"
+        android:textColor="#3C4147"/>
+    
+</RelativeLayout>
