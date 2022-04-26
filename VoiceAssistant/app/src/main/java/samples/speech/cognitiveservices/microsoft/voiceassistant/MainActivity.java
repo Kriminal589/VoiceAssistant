@@ -19,6 +19,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -30,12 +32,26 @@ public class MainActivity extends AppCompatActivity {
     ImageButton searchVoice;
     String s;
     private TextToSpeech textToSpeech;
+    private final File pathToSave = new File(getExternalFilesDir(null),"VoiceAssistant");
+    private File file = new File(pathToSave, "file.txt");
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        boolean res = true;
+        if (!pathToSave.exists())
+            res = pathToSave.mkdirs();
+        try {
+            res = file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(res);
+        System.out.println(pathToSave.exists());
 
         textToSpeech = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS){
@@ -109,6 +125,10 @@ public class MainActivity extends AppCompatActivity {
                             WebIntent("https://yandex.ru/pogoda/moscow");
                         }
                         break;
+                    case "Запиши в файл":
+                        textToSpeech.speak("Choose file", TextToSpeech.QUEUE_FLUSH, null);
+                        Intent intent1 = new Intent(this, WorkWithFiles.class);
+                        startActivity(intent1);
                     default:
                         textToSpeech.speak("This command i don't know", TextToSpeech.QUEUE_FLUSH, null);
                         break;

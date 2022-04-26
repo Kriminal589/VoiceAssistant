@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0ad7152-b815-4b47-b031-5a2330e4c071" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/VoiceAssistant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceAssistant/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceAssistant/app/src/main/java/samples/speech/cognitiveservices/microsoft/voiceassistant/WorkWithFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceAssistant/app/src/main/res/layout/choose_file.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceAssistant/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceAssistant/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceAssistant/app/src/main/java/samples/speech/cognitiveservices/microsoft/voiceassistant/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceAssistant/app/src/main/java/samples/speech/cognitiveservices/microsoft/voiceassistant/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceAssistant/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceAssistant/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="279KMuZ4XRHWzVQd6Vs2KtV94jA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0ad7152-b815-4b47-b031-5a2330e4c071" name="Default Changelist" comment="" />
+      <created>1648726817962</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648726817962</updated>
+    </task>
+    <servers />
+  </component>
+</project>

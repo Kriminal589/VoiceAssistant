@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="samples.speech.cognitiveservices.microsoft.voiceassistant">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/avrora"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/avrora"
@@ -19,6 +22,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".WorkWithFiles">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL"/>
+            </intent-filter>
         </activity>
     </application>
 
